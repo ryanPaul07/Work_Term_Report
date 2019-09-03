@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(alexandre-debieve-FO7JIlwjOtU-unsplash.jpg);
+    height: 100vh;
+    background-size: cover;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#Title {
+    color: whitesmoke;
+    /* font-size: 100%; */
+}
+
+#Title a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#down {
+    font-size: 2.5em;
+    top: 85vh;
+    /* padding: 20px; */
+}
+
+#down:hover {
+    color: orange;
+
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(alexandre-debieve-FO7JIlwjOtU-unsplash.jpg);
+    background-size: cover;
+    /* background-color: rgb(53, 53, 53);
+    color: whitesmoke; */
+}
+
+.name h5 {
+    color: whitesmoke;
+    margin: 0px;
+
+}
+
+.footer-links {
+    margin: 0px;
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+}
+
+.footer-links a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+
+/* #top-right {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    border: black;
+    border-width: thin;
+    border-style: dotted;
+} */
+
+.hideme {
+    opacity: 0;
+}
+
+.sub-heading-design {
+    cursor: pointer;
+}
+
+.sub-heading-design:hover {
+    font-weight: bold;
+}
