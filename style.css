@@ -1,0 +1,274 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    width: 100vw;
+    /* background-color: #5d4954; */
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* Bootstrap adds own css on elements, this is why margin is set to 0 */
+#navBar ul,h4 {
+    margin: 0;
+}
+
+/* logo styling */
+.logo:hover a {
+    font-weight: bolder;
+    color: rgb(240, 131, 140);
+}
+
+.logo a {
+    color: rgb(235, 235, 235);
+    letter-spacing: 5px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* nav links behavior and styling */
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links #suv:hover {
+    color: rgb(240, 131, 140);
+}
+
+.nav-links #mto:hover {
+    color: rgb(240, 131, 140);
+}
+
+/* Not required currently */
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(235, 235, 235);
+    margin: 5px;
+}
+
+/* landing page background for different pages */
+#home_landing_page {
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url(blue-and-red-galaxy-artwork-1629236.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+
+#mto_landing_page {
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5) ), url(aerial-photo-of-buildings-and-roads-681335.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+
+#st_landing_page {
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url(alexandre-debieve-FO7JIlwjOtU-unsplash.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+
+.landPG-fadeIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title p {
+    font-size: 50px;
+    color: whitesmoke;
+    cursor: pointer;
+    /* font-family:  */
+}
+
+.arrow {
+    text-align: center;
+}
+.arrow a,span {
+    font-size: 200%;
+    color: whitesmoke;
+}
+
+.arrow a {
+    text-decoration: none;
+}
+
+.arrow span:hover {
+    color: rgb(240, 131, 140);
+    transition: 0.3s;
+}
+
+/* footer behavior and styling */
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(alexandre-debieve-FO7JIlwjOtU-unsplash.jpg);
+    background-size: cover;
+    /* background-color: rgb(53, 53, 53);
+    color: whitesmoke; */
+}
+
+.name h5 {
+    color: whitesmoke;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.footer-links {
+    margin: 0px;
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.footer-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links li {
+    list-style: none;
+}
+
+.footer-links #linkedIn:hover {
+    color: rgb(240, 131, 140);
+}
+
+.footer-links #email:hover {
+    color: rgb(240, 131, 140);
+}
+
+.footer-links #github:hover {
+    color: rgb(240, 131, 140);
+}
+
+/* sizing for nav and footer links */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        width: 40%;
+    }
+    .footer-links {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-links {
+        width: 50%;
+    }
+}
+
+/* Home page */
+@media screen and (max-width: 500px) {
+    .title p {
+        font-size: 35px;
+        color: whitesmoke;
+    }
+}
+
+/* MTO page */
+@media screen and (max-width: 740px) {
+    .title #mto_title {
+        text-align: center;
+    }
+    #mto_title {
+        font-size: 35px;
+        color: whitesmoke;
+    }
+}
+
+
+
+
+/* testing accordion functionality */
+button.expand {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    transition: 0.3s;
+}
+
+#testing.active button {
+    color: rgb(240, 131, 140);
+    -webkit-transition: all 0.3s ease-out;
+}
+
+#testing.active h4 {
+    color: rgb(224, 175, 49);
+    -webkit-transition: all 0.3s ease-out;
+}
+
+button.expand:hover {
+    color: rgb(240, 131, 140);
+}
+
+div.panel {
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: 0.3s;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+    -webkit-transition: all 0.3s ease-out;
+}
